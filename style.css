@@ -1,5 +1,5 @@
-.body{
-    background-color: dodgerblue;
+body{
+    background-color: darkblue;
 }
 
 #button1{
@@ -9,18 +9,9 @@
     width: 200px;
     align-items: center;
     position: absolute;
-    box-shadow: 0px 15px 10px 5px;
-    right: 500px;
+    box-shadow: 0px 15px 5px 5px;
+    left: 850px;
+    top: 300px;
     font-family: 'Times New Roman', Times, serif;
 }
 
-#button1:active{
-    height: 150px;
-    width: 200px;
-    animation: move 0.5s
-}
-
-@keyframes animation {
-    from {top:0px;}
-    to {top: 50px;}
-}

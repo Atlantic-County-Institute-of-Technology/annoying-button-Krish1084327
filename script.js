@@ -13,12 +13,14 @@ function annoy() {
 }
 else if(clicks == 10){
     text.innerHTML = "I WANT YOU TO STOP DUDE";
+    button1.classList.add("angry");
 }
 else if(clicks == 15){
     text.innerHTML = "I WILL HUNT YOUUUU DOWNNNNNN";
 }
 else if(clicks == 20){
     text.innerHTML = "YOU ASKED FOR IT"
+    button1.classList.remove("angry")
 }
 else if(clicks == 25){
     text.innerHTML = "I'M COMIN"
@@ -29,5 +31,10 @@ else if(clicks == 30){
 else if(clicks == 35){
     text.innerHTML = "YOUR LUCKY THAT IM 20 HOURS AWAY FROM YOU"
 }
-
+else if(clicks == 40){
+    text.innerHTML = "Uhh"
+}
+else if(clicks == 45){
+    text.innerHTML = "I'll let you go"
+}
 }

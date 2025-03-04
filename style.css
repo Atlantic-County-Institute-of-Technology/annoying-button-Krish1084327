@@ -1,8 +1,16 @@
 body{
     background-color: peachpuff;
 }
+@keyframes back-and-forth {
+    0%, 5%, 95%, 100%{
+        left:0%;
+        transform: translate (0,0);
+    }
+}
 
-#button1{
+
+/* the button*/
+.button1{
     background-color: rgb(201, 9, 9);
     border-radius: 50%;
     height: 200px;
@@ -16,8 +24,13 @@ body{
     font-size: 35px;
 }
 
+.angry{
+    background-color: rgb(135, 4, 4);
+    animation: 5s back-and-forth ease-in-out;
+}
+
 #text{
     position: absolute;
-    left: 860px;
-    top: 225px;
+    left: 770px;
+    top: 155px;
 }

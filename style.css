@@ -1,13 +1,17 @@
 body{
     background-color: peachpuff;
 }
+
+.container {
+    border: 50px;
+}
+
 @keyframes back-and-forth {
     0%, 5%, 95%, 100%{
         left:0%;
         transform: translate (0,0);
     }
 }
-
 
 /* the button*/
 .button1{
@@ -33,4 +37,11 @@ body{
     position: absolute;
     left: 770px;
     top: 155px;
+}
+
+.button2{
+    background-color: blue;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
 }

@@ -5,7 +5,7 @@ body{
 .container {
     border: 50px;
 }
-
+/*the animation*/
 @keyframes back-and-forth {
     0%, 5%, 95%, 100%{
         left:0%;
@@ -38,10 +38,12 @@ body{
     left: 770px;
     top: 155px;
 }
-
+/*the button that spawns in*/
 .button2{
     background-color: blue;
     border-radius: 50%;
     width: 200px;
     height: 200px;
+    top: 700px;
+    animation: 25s up-and-down ease-in-out;
 }

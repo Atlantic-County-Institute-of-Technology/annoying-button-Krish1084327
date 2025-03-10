@@ -5,13 +5,24 @@ body{
 .container {
     border: 50px;
 }
-/*the animation*/
+/*the animations*/
 @keyframes back-and-forth {
     0%, 5%, 95%, 100%{
         left:0%;
         transform: translate (0,0);
     }
 }
+
+@keyframes up-and-down {
+ from {
+       transform: rotate(360deg)     translateY(10px)    rotate(360deg);
+ }
+ to {
+     transform:   rotate(360deg)    translateY(700px)   rotate(360deg);  
+ }   
+}
+
+
 
 /* the button*/
 .button1{
@@ -28,9 +39,15 @@ body{
     font-size: 35px;
 }
 
+/*makes the button a darker shade of red*/
 .angry{
     background-color: rgb(135, 4, 4);
     animation: 5s back-and-forth ease-in-out;
+}
+
+/*makes the button go up and down super fast*/
+.up-and-down {
+animation: up-and-down .00001s linear infinite;
 }
 
 #text{
@@ -45,5 +62,4 @@ body{
     width: 200px;
     height: 200px;
     top: 700px;
-    animation: 25s up-and-down ease-in-out;
 }

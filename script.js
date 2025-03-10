@@ -5,6 +5,7 @@ let eh30 = new Audio('assets/eh30.mp3')
 let sidelined = new Audio('assets/sidelined.mp3')
 let MUSTARD = new Audio('assets/mustard.mp3')
 let android = new Audio('assets/android.mp3')
+let no = new Audio('assets/NO.mp3')
 
 let clicks = 0;
 
@@ -39,11 +40,14 @@ else if(clicks == 25){
     button1.classList.add("button1")
 }
 else if(clicks == 30){
-    text.innerHTML = "GRRH"
+    text.innerHTML = "NOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO"
     button1.classList.remove("angry")
+    no.play("NO.mp3");
+
 }
 else if(clicks == 35){
     text.innerHTML = "YOUR LUCKY THAT IM 20 HOURS AWAY FROM YOU"
+    button2.classList.add("spin")
 }
 else if(clicks == 40){
     text.innerHTML = "Uhh"
@@ -58,7 +62,8 @@ else if(clicks == 55){
     text.innerHTML = "Im HERE"
 }
 else if(clicks == 65){
-    text.innerHTML = "yOU jUST lOST mad AURA"
+    text.innerHTML = "Get to 100 clicks to win and you won't get captured"
+    button1.classList.add ("up-and-down")
 }
 else if(clicks == 100){
 text.innerHTML = "You Win Congrats"
